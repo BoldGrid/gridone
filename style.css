@@ -61,12 +61,143 @@ body,
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 1em 0;
+}
+p {
+	margin-bottom: 15px;
+}
+.mod-divider p {
+    margin-top: -30px;
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+body {
+  	font-weight: 400;
+}
+h2 {
+	font-weight: 700;
+}
+h3 {
+	font-weight: 400;
+}
+.title-main {
+  	font-size: 60px; /* Specified font size */
+  	font-weight: 700;
+}
+.entry-title {
+    text-transform: none;
+	font-weight: 300;
+	text-align: center;
+}
+.button-primary,
+.button-secondary,
+input[type="submit"] {
+	text-transform: none;
+}
+.button-primary:hover,
+.button-primary:active,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	text-decoration: none;
+}
+.button-secondary:hover,
+.button-secondary:active {
+	text-decoration: none;
+}
+.site-title {
+	font-weight: normal;
+}
+#site-navigation {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+#secondary-menu a,
+#tertiary-menu a,
+#menu-social a {
+    text-transform: uppercase;
+}
+#secondary-menu,
+#tertiary-menu {
+    text-align: center;
+}
+.menu-social {
+	text-align: center;	
+}
+#menu-social li a {
+	text-align: right;
+}
+.gridblock .heading-alt {
+	font-weight: 400;
+}
+.mod-divider p {
+    text-align: center;
+}
+.mod-divider a {
+	font-size: 60px; /* Specified font size */
+}
+.mod-icon-circle i {
+    font-size: 35px; /* Specified font size */
+}
+
+/* Blockquote */
+.mod-blockquote p {
+	font-size: 24px; /* Specified font size */
+	line-height: 28px;
+}
+
+.woocommerce p.buttons a.button:hover {
+    text-decoration: none;
+}
+
+.site-footer p,
+.site-info,
+.attribution {
+	text-align: center;
+}
+.site-footer a {
+	text-decoration: underline;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+	text-decoration: none;
+}
+
+/* xs */
+.site-title,
+.site-description {
+	text-align: center;
+}
+.title-main {
+	text-align: center;
+}
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav .open .dropdown-menu {
+	text-align: center;
+}
 .xs-center,
 .mod-img,
 .mod-img-circle,
 .p-button-primary,
 .p-button-secondary {
 	text-align: center;
+}
+
+/* sm */
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav,
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		text-align: left;
+	}
+	.menu-social {
+	    text-align: right;
+	}
+	.title-main {
+  		font-size: 85px; /* Specified font size */
+	}
 }
 
 /* md */
@@ -78,36 +209,13 @@ body,
 	.p-button-secondary {
 		text-align: left;
 	}
-}
-
-/*-----------------------------------------------
-## Typography
------------------------------------------------*/
-body {
-	color: #333;
-	font-family: 'Open Sans';
-  	font-size: 14px;
-  	font-weight: 400;
-}
-h1, h2, h3, h4, h5, h6 {
-	color: #333;
-	font-family: 'Oswald';
-	margin: 1em 0;
-}
-h2 {
-	font-size: 24px;
-	font-weight: 700;
-}
-h3 {
-	font-size: 20px;
-	font-weight: 400;
-}
-p {
-	margin-bottom: 15px;
-}
-ul, ol {
-	font-family: "Open Sans";
-	line-height: 26px;
+	.title-main {
+		text-align: right;
+	}
+	.site-title,
+	.site-description  {
+		text-align: left;
+	}
 }
 
 /*-----------------------------------------------
@@ -116,17 +224,7 @@ ul, ol {
 .page-template-page_home .entry-title {
 	display: none;
 }
-.entry-title {
-	font-family: 'Oswald';
-	font-size: 30px;
-}
 .title-main {
-	border-bottom: 1px solid #333;
-    border-top: 1px solid #333;
-	color: #333;
-  	font-family: 'Oswald';
-  	font-size: 85px;
-  	font-weight: 700;
   	margin: 0;
     padding: 20px 0;
 }
@@ -135,12 +233,8 @@ ul, ol {
 }
 .entry-title {
 	display: block;
-	font-family: 'Oswald';
-	font-size: 20px;
-	font-weight: 300;
 	margin: 60px 0;
 	position: relative;
-	text-align: center;
     z-index: 1;
 }
 .entry-title:before {
@@ -158,18 +252,6 @@ ul, ol {
     padding: 0 15px; 
 }
 
-/* xs */
-.title-main {
-	text-align: center;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.title-main {
-		text-align: right;
-	}
-}
-
 /*-----------------------------------------------
 ## Links
 -----------------------------------------------*/
@@ -182,19 +264,7 @@ ul, ol {
 input[type="submit"] {
 	border-radius: 2px;
 	display: inline-block;
-	font-size: 14px;
 	padding: 8px 15px;
-	text-transform: none;
-}
-.button-primary:hover,
-.button-primary:active,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-	text-decoration: none;
-}
-.button-secondary:hover,
-.button-secondary:active {
-	text-decoration: none;
 }
 
 /* Positioning */
@@ -231,7 +301,6 @@ input[type="submit"]:focus {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	background: #333;
 	border: 0;
 	height: 1px;
 }
@@ -239,26 +308,6 @@ hr {
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-.site-title {
-	font-weight: normal;
-}
-.site-title a {
-	color: #333;
-}
-
-/* xs */
-.site-title,
-.site-description {
-	text-align: center;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.site-title,
-	.site-description  {
-		text-align: left;
-	}
-}
 
 /*------------------------------------------------------------------------
 # Navigation
@@ -267,14 +316,6 @@ hr {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Typography */
-#site-navigation {
-	font-family: "Oswald";
-	font-size: 14px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
 /* Nav Reset */
 .navbar {
 	background-color: none;
@@ -295,7 +336,6 @@ hr {
 
 /* Links */
 .navbar-default .navbar-nav > li > a {
-    color: #333;
     padding: 10px;
 }
 .navbar-default .navbar-nav > li:first-child > a {
@@ -309,7 +349,6 @@ hr {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background: none;
-  	color: #337ab7;
 }
 
 /* Dropdown Parent */
@@ -318,7 +357,6 @@ hr {
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .current-menu-parent > a {
 	background: none;
-	color: #fff;
 }
 
 /* Dropdown Child */
@@ -328,44 +366,10 @@ hr {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     background: none;
-	color: #fff;
-}
-
-/* Nav Toggle */
-.navbar-default .navbar-toggle {
-    border-color: #ddd;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #337ab7;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-	background-color: #ddd;
-}
-.navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #25374a;
-}
-
-/* xs */
-.navbar-default .navbar-nav,
-.navbar-default .navbar-nav .open .dropdown-menu {
-	text-align: center;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #25374a;
 }
 
 /* sm */
 @media (min-width: 768px) {
-	.navbar-default .navbar-nav,
-	.navbar-default .navbar-nav .open .dropdown-menu {
-		text-align: left;
-	}
-	/* Dropdown Child Default */
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    	color: #25374a;
-	}
 	.navbar-default {
 		float: right;
 	}
@@ -377,21 +381,12 @@ hr {
 #secondary-menu a,
 #tertiary-menu a,
 #menu-social a {
-	color: #3e3e3e;
-	font-family: "Oswald";
-    font-size: 12px;
 	padding: 0 5px;
-    text-transform: uppercase;
 }
 #secondary-menu,
 #tertiary-menu {
     background: none;
-    text-align: center;
 }
-#secondary-menu a[href]:hover,
-#tertiary-menu a[href]:hover {
-    color: #337ab7;
-} 
 .boldgrid-framework-menu li::after {
 	content: none;
 }
@@ -404,7 +399,6 @@ hr {
 -----------------------------------------------*/
 .menu-social {
 	padding: 0;
-	text-align: center;	
 }
 .menu-social ul {
 	padding-left: 0;
@@ -423,13 +417,7 @@ hr {
 }
 #menu-social li a {
 	display: inline-block;
-	text-align: right;
-	color: #666;
 	-webkit-font-smoothing: antialiased;
-}
-#menu-social li a:hover,
-#menu-social li a:focus {
-	color: #337ab7;
 }
 .navbar-nav .menu-social {
     margin-top: 0;
@@ -440,7 +428,6 @@ hr {
 	.menu-social {
 		margin-top: 15px;
 	    padding-right: 15px;
-	    text-align: right;
 	}
 }
 
@@ -467,15 +454,6 @@ hr {
 /*-----------------------------------------------
 ## Alternates
 -----------------------------------------------*/
-.gridblock .font-alt {
-	font-family: 'Oswald';
-}
-.gridblock .heading-alt {
-	color: #738599;
-	font-family: 'Oswald';
-	font-size: 22px;
-	font-weight: 400;
-}
 
 /*------------------------------------------------------------------------
 # Modules
@@ -528,22 +506,10 @@ hr {
 -----------------------------------------------*/
 /* Divider */
 .mod-divider {
-	border-top: 1px solid #333;
 	margin: 4em 0;
 }
-.mod-divider p {
-	margin-top: -45px;
-	text-align: center;
-}
-.mod-divider a {
-	background: #fff;
-	color: #333;
-	font-size: 60px;
-}
 .mod-icon-circle i {
-	border: 2px solid #333;
     border-radius: 50%;
-    font-size: 35px;
     padding: 15px;
 }
 .mod-icon-circle .fa-lightbulb-o {
@@ -552,13 +518,10 @@ hr {
 
 /* Blockquote */
 .mod-blockquote {
-	border-left: 7px solid #333;
 	padding-bottom: 0;
 	padding-top: 0;
 }
 .mod-blockquote p {
-	font-size: 24px;
-	line-height: 28px;
 	padding-left: 15px;
 }
 
@@ -581,33 +544,16 @@ hr {
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-title, 
-.page-title {
-    font-family: 'Oswald';
-    font-size: 18px;
-}
 .widget-area {
-    border: 1px solid #ccc;
 	margin-top: 25px;
     padding: 25px;
     list-style:none;
 }
 
 /* Comments */
-.comment-reply-title,
-.comments-title {
-    font-family: 'Oswald';
-    font-size: 24px;
-}
 .comment-form-comment label {
     float: left;
     padding-right: 15px;
-}
-.comments-area .comment-content p {
-	color: #333;
-}
-.color1-text-contrast {
-	color: #337ab7;
 }
 .panel-footer {
     padding: 20px 15px;
@@ -620,14 +566,7 @@ hr {
 
 /* Buttons */
 .form-submit .submit {
-	background: #ccc;
-	color: #337ab7;
 	margin-bottom: 10px;
-}
-.form-submit .submit:hover,
-.form-submit .submit:focus {
-	background: #337ab7;
-	color: #ccc;
 }
 
 /*------------------------------------------------------------------------
@@ -640,36 +579,14 @@ hr {
 .woocommerce .page-title {
 	margin: 0;	
 }
-.woocommerce #respond input#submit, 
-.woocommerce a.button,
-.woocommerce button.button, 
-.woocommerce input.button,
-.woocommerce p.buttons a.button {
-    background-color: #a46497;
-    color: #fff;
-}
 .woocommerce p.buttons a.button:hover {
-	background-color: #dad8da;
     background-image: none;
-    color: #515151;
     text-decoration: none;
 }
 
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
-.site-footer p,
-.site-info,
-.attribution {
-	text-align: center;
-}
-.site-footer a {
-	text-decoration: underline;
-}
-.site-footer a:hover,
-.site-footer a:focus {
-	text-decoration: none;
-}
 .site-info {
 	margin-bottom: -10px;
 }

@@ -1,108 +1,179 @@
 /*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## 1
------------------------------------------------*/
-.palette-primary .button-primary,
-.palette-primary input[type="submit"],
-.palette-primary .widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
-	background: $palette-primary_1;
-	border: 1px solid $palette-primary_1;
-	color: $text-contrast-palette-primary_1;
-}
-.palette-primary .button-secondary {
-	background: $palette-primary_2;
-	border: 1px solid $palette-primary_2;
-	color: $text-contrast-palette-primary_1;
-}
-.palette-primary .button-primary:hover,
-.palette-primary .button-primary:active,
-.palette-primary input[type="submit"]:hover,
-.palette-primary input[type="submit"]:focus  {
-	background: $palette-primary_2;
-	border: 1px solid $palette-primary_2;
-	color: $text-contrast-palette-primary_1;
-}
-.palette-primary .button-secondary:hover,
-.palette-primary .button-secondary:active {
-	background: none;
-	border: 1px solid $palette-primary_1;
-	color: $palette-primary_1;
-}
-.palette-primary h1, 
-.palette-primary h2, 
-.palette-primary h3, 
-.palette-primary h4, 
-.palette-primary h5, 
-.palette-primary h6,
-.palette-primary caption {
-	color: $palette-primary_1;
-}
-.palette-primary .title-main {
-	border-bottom: 1px solid $palette-primary_1;
-    border-top: 1px solid $palette-primary_1;
-	color: $palette-primary_1;
-}
-.palette-primary hr {
-	background: $palette-primary_1;
-}
-.palette-primary .mod-blockquote {
-	border-left: 7px solid $palette-primary_1;
-}
-.palette-primary .entry-title:before {
-	border-top: 1px solid $palette-primary_1;
-}
-.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
-.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
-	background: $palette-primary_2;
-	color: $text-contrast-palette-primary_2;
-}
-
-/*-----------------------------------------------
-## 2
------------------------------------------------*/
-.palette-primary a,
-.palette-primary .link-primary,
-.palette-primary .link-secondary,
-.palette-primary .heading-alt,
-.palette-primary #menu-social li a:hover,
-.palette-primary #menu-social li a:focus,
-.palette-primary #secondary-menu a[href]:hover,
-.palette-primary #tertiary-menu a[href]:hover,
-.palette-primary .navbar-default .navbar-nav > li > a:hover,
-.palette-primary .navbar-default .navbar-nav > li > a:focus,
-.palette-primary .navbar-default .navbar-nav > .active > a,
-.palette-primary .navbar-default .navbar-nav > .active > a:hover,
-.palette-primary .navbar-default .navbar-nav > .active > a:focus,
-.palette-primary.disabled-footer .site-footer a {
-  	color: $palette-primary_2;
-}
-
-/*-----------------------------------------------
-## 3
------------------------------------------------*/
 .palette-primary {
+
 	background: $palette-primary_3;
 	color: $text-contrast-palette-primary_3;
-}
-.palette-primary.disabled-footer .site-footer,
-.palette-primary .entry-title span {
-	background-color: $palette-primary_3;
-}
-.palette-primary .mod-divider a {
-    background: $palette-primary_3;
-}
-.palette-primary .site-title a,
-.palette-primary #secondary-menu a,
-.palette-primary #tertiary-menu a,
-.palette-primary #menu-social a,
-.palette-primary .navbar-default .navbar-nav > li > a,
-.palette-primary body {
-	color: $text-contrast-palette-primary_3;
-}
 
+	/*-----------------------------------------------
+	## 1
+	-----------------------------------------------*/
+	.button-primary,
+	input[type="submit"],
+	.widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
+		background: $palette-primary_1;
+		border: 1px solid $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	.button-secondary {
+		background: $palette-primary_2;
+		border: 1px solid $palette-primary_2;
+		color: $text-contrast-palette-primary_1;
+	}
+	.button-primary:hover,
+	.button-primary:active,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus  {
+		background: $palette-primary_2;
+		border: 1px solid $palette-primary_2;
+		color: $text-contrast-palette-primary_1;
+	}
+	.button-secondary:hover,
+	.button-secondary:active {
+		background: none;
+		border: 1px solid $palette-primary_1;
+		color: $palette-primary_1;
+	}
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6,
+	caption,
+	#menu-social li a {
+		color: $palette-primary_1;
+	}
+	.title-main {
+		border-bottom: 1px solid $palette-primary_1;
+	    border-top: 1px solid $palette-primary_1;
+		color: $palette-primary_1;
+	}
+	hr {
+		background: $palette-primary_1;
+	}
+	.mod-blockquote {
+		border-left: 7px solid $palette-primary_1;
+	}
+	.mod-icon-circle i {
+		border: 2px solid $palette-primary_1;
+		color: $palette-primary_1;
+	}
+	.mod-divider {
+		border-top: 1px solid $text-contrast-palette-primary_3;
+	}
+	.entry-title:before {
+		border-top: 1px solid $palette-primary_1;
+	}
+	.navbar-default .navbar-nav > .open > a, 
+	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav > .current-menu-parent > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	#secondary-menu a,
+	#tertiary-menu a,
+	#menu-social a {
+		color: $text-contrast-palette-primary_1;
+	}
+
+	/*-----------------------------------------------
+	## 2
+	-----------------------------------------------*/
+	a,
+	.link-primary,
+	.link-secondary,
+	.heading-alt,
+	#menu-social li a:hover,
+	#menu-social li a:focus,
+	#secondary-menu a[href]:hover,
+	#tertiary-menu a[href]:hover,
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus,
+	.palette-primary.disabled-footer .site-footer a {
+	  	color: $palette-primary_2;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: $palette-primary_2;
+	}
+	.form-submit .submit {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_2;
+	}
+	.form-submit .submit:hover,
+	.form-submit .submit:focus {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+
+	/* xs */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: $text-contrast-palette-primary_2;
+	}
+
+	/* sm */
+	@media (min-width: 768px) {
+		/* Dropdown Child Default */
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    	color: $text-contrast-palette-primary_2;
+		}
+	}
+
+	/*-----------------------------------------------
+	## 3
+	-----------------------------------------------*/
+	.palette-primary.disabled-footer .site-footer,
+	.entry-title span {
+		background-color: $palette-primary_3;
+	}
+	.mod-divider a {
+	    background: $palette-primary_3;
+	}
+	.site-title a,
+	#secondary-menu a,
+	#tertiary-menu a,
+	#menu-social a,
+	.navbar-default .navbar-nav > li > a,
+	.comments-area .comment-content p {
+		color: $text-contrast-palette-primary_3;
+	}
+	/* Nav Toggle */
+	.navbar-default .navbar-toggle {
+	    border-color: $palette-primary_3;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background-color: $palette-primary_3;
+	}
+	.widget-area {
+	    border: 1px solid $text-contrast-palette-primary_3;
+	}
+
+	/*-----------------------------------------------
+	# Et Cetera 
+	-----------------------------------------------*/
+	.woocommerce #respond input#submit, 
+	.woocommerce a.button,
+	.woocommerce button.button, 
+	.woocommerce input.button,
+	.woocommerce p.buttons a.button {
+	    background-color: #a46497;
+	    color: #fff;
+	}
+	.woocommerce p.buttons a.button:hover {
+		background-color: #dad8da;
+	    color: #515151;
+	}
+}
