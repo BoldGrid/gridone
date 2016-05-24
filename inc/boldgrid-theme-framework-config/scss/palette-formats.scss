@@ -1,0 +1,108 @@
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## 1
+-----------------------------------------------*/
+.palette-primary .button-primary,
+.palette-primary input[type="submit"],
+.palette-primary .widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
+	background: $palette-primary_1;
+	border: 1px solid $palette-primary_1;
+	color: $text-contrast-palette-primary_1;
+}
+.palette-primary .button-secondary {
+	background: $palette-primary_2;
+	border: 1px solid $palette-primary_2;
+	color: $text-contrast-palette-primary_1;
+}
+.palette-primary .button-primary:hover,
+.palette-primary .button-primary:active,
+.palette-primary input[type="submit"]:hover,
+.palette-primary input[type="submit"]:focus  {
+	background: $palette-primary_2;
+	border: 1px solid $palette-primary_2;
+	color: $text-contrast-palette-primary_1;
+}
+.palette-primary .button-secondary:hover,
+.palette-primary .button-secondary:active {
+	background: none;
+	border: 1px solid $palette-primary_1;
+	color: $palette-primary_1;
+}
+.palette-primary h1, 
+.palette-primary h2, 
+.palette-primary h3, 
+.palette-primary h4, 
+.palette-primary h5, 
+.palette-primary h6,
+.palette-primary caption {
+	color: $palette-primary_1;
+}
+.palette-primary .title-main {
+	border-bottom: 1px solid $palette-primary_1;
+    border-top: 1px solid $palette-primary_1;
+	color: $palette-primary_1;
+}
+.palette-primary hr {
+	background: $palette-primary_1;
+}
+.palette-primary .mod-blockquote {
+	border-left: 7px solid $palette-primary_1;
+}
+.palette-primary .entry-title:before {
+	border-top: 1px solid $palette-primary_1;
+}
+.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.palette-primary .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
+	background: $palette-primary_2;
+	color: $text-contrast-palette-primary_2;
+}
+
+/*-----------------------------------------------
+## 2
+-----------------------------------------------*/
+.palette-primary a,
+.palette-primary .link-primary,
+.palette-primary .link-secondary,
+.palette-primary .heading-alt,
+.palette-primary #menu-social li a:hover,
+.palette-primary #menu-social li a:focus,
+.palette-primary #secondary-menu a[href]:hover,
+.palette-primary #tertiary-menu a[href]:hover,
+.palette-primary .navbar-default .navbar-nav > li > a:hover,
+.palette-primary .navbar-default .navbar-nav > li > a:focus,
+.palette-primary .navbar-default .navbar-nav > .active > a,
+.palette-primary .navbar-default .navbar-nav > .active > a:hover,
+.palette-primary .navbar-default .navbar-nav > .active > a:focus,
+.palette-primary.disabled-footer .site-footer a {
+  	color: $palette-primary_2;
+}
+
+/*-----------------------------------------------
+## 3
+-----------------------------------------------*/
+.palette-primary {
+	background: $palette-primary_3;
+	color: $text-contrast-palette-primary_3;
+}
+.palette-primary.disabled-footer .site-footer,
+.palette-primary .entry-title span {
+	background-color: $palette-primary_3;
+}
+.palette-primary .mod-divider a {
+    background: $palette-primary_3;
+}
+.palette-primary .site-title a,
+.palette-primary #secondary-menu a,
+.palette-primary #tertiary-menu a,
+.palette-primary #menu-social a,
+.palette-primary .navbar-default .navbar-nav > li > a,
+.palette-primary body {
+	color: $text-contrast-palette-primary_3;
+}
+
