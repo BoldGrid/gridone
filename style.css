@@ -126,7 +126,7 @@ input[type="submit"]:focus {
     text-align: center;
 }
 .menu-social {
-	text-align: center;	
+	text-align: center;
 }
 #menu-social li a {
 	text-align: right;
@@ -222,7 +222,7 @@ input[type="submit"]:focus {
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.page-template-page_home .entry-title {
+.page-template-home .entry-title {
 	display: none;
 }
 .title-main {
@@ -243,14 +243,14 @@ input[type="submit"]:focus {
     content:"";
 	left: 0;
     margin: 0 auto;
-    position: absolute; 
+    position: absolute;
     right: 0;
 	top: 50%;
     z-index: -1;
 }
-.entry-title span { 
-    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
-    padding: 0 15px; 
+.entry-title span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    padding: 0 15px;
 }
 
 /*-----------------------------------------------
@@ -353,16 +353,16 @@ hr {
 }
 
 /* Dropdown Parent */
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .current-menu-parent > a {
 	background: none;
 }
 
 /* Dropdown Child */
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -414,7 +414,7 @@ hr {
 }
 #menu-social ul li {
     position: relative;
-    display:  inline-block;    
+    display:  inline-block;
 }
 #menu-social li a {
 	display: inline-block;
@@ -439,14 +439,14 @@ hr {
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-.gridblock h1, 
-.gridblock h2, 
-.gridblock h3, 
-.gridblock h4, 
-.gridblock h5, 
+.gridblock h1,
+.gridblock h2,
+.gridblock h3,
+.gridblock h4,
+.gridblock h5,
 .gridblock h6,
-.gridblock ol, 
-.gridblock ul, 
+.gridblock ol,
+.gridblock ul,
 .gridblock li,
 .gridblock p {
 	margin: 10px 0;
@@ -496,7 +496,7 @@ hr {
 .image-gallery img,
 .video-gallery img,
 .slideshow-gallery img {
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 }
 .mod-img-circle img {
 	border-radius: 50%;
@@ -562,7 +562,7 @@ hr {
 
 /* Call to Action */
 .single .call-to-action {
-	display: none;	
+	display: none;
 }
 
 /* Buttons */
@@ -578,7 +578,7 @@ hr {
 ## WooCommerce
 -----------------------------------------------*/
 .woocommerce .page-title {
-	margin: 0;	
+	margin: 0;
 }
 .woocommerce p.buttons a.button:hover {
     background-image: none;
