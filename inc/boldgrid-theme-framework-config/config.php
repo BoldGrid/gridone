@@ -117,7 +117,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Below Site Title';
 
-	// Configs above will override framework defaults
 	return $boldgrid_framework_configs;
 }
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config' );
