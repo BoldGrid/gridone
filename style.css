@@ -222,9 +222,6 @@ input[type="submit"]:focus {
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.page-template-home .entry-title {
-	display: none;
-}
 .title-main {
   	margin: 0;
     padding: 20px 0;
@@ -251,6 +248,9 @@ input[type="submit"]:focus {
 .entry-title span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
     padding: 0 15px;
+}
+.page-template-home .entry-header {
+	display: none;
 }
 
 /*-----------------------------------------------
