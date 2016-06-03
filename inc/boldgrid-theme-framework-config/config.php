@@ -84,7 +84,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['h2.title-main' ]= array(
 		'type' => 'headings',
 		'round' => 'ceil',
-		'amount' => 4.7, 
+		'amount' => 5.3, 
 	);
 
 	// Icons
