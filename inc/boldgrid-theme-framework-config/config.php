@@ -80,6 +80,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 15;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
 
+	// Typography Relationships
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['h2.title-main' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 4.5, 
+	);
+
 	// Icons
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 	
