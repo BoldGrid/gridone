@@ -83,8 +83,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Typography Relationships
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['h2.title-main' ]= array(
 		'type' => 'headings',
-		'round' => 'floor',
-		'amount' => 4.5, 
+		'round' => 'ceil',
+		'amount' => 4.7, 
 	);
 
 	// Icons
