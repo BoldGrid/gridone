@@ -77,7 +77,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Body
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 15;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 134;
 
 	// Typography Relationships
