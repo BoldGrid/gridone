@@ -98,7 +98,8 @@ input[type="submit"]:focus,
 
 /* Icons */
 .mod-divider i {
-	font-size: 54px;
+	font-size: 52px;
+	padding-top: 0;
 }
 .mod-icon-circle i {
     font-size: 35px;
