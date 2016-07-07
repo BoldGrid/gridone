@@ -249,7 +249,7 @@ input[type="submit"]:focus {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
     padding: 0 15px;
 }
-.page-template-home .entry-header {
+.page-template-page_home .entry-header {
 	display: none;
 }
 
