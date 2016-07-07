@@ -34,47 +34,47 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 * Customizer Configs
 	 */
 	$boldgrid_framework_configs['customizer-options']['colors']['enabled'] = true;
-	$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array (
-		array (
+	$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array(
+		array(
 			'default' => true,
 			'format' => 'palette-primary',
 			'colors' => array(
 				'#333333',
 				'#337ab7',
 				'#ffffff',
-			)
+			),
 		),
-		array (
+		array(
 			'format' => 'palette-primary',
 			'colors' => array(
 				'#230f2b',
 				'#c13439',
 				'#eaead7',
-			)
+			),
 		),
-		array (
+		array(
 			'format' => 'palette-primary',
 			'colors' => array(
 				'#cacca6',
 				'#ffdd9b',
 				'#ad9a6f',
-			)
+			),
 		),
-		array (
+		array(
 			'format' => 'palette-primary',
 			'colors' => array(
 				'#42282c',
 				'#78343f',
 				'#84abaa',
-			)
+			),
 		),
-		array (
+		array(
 			'format' => 'palette-primary',
 			'colors' => array(
 				'#ffffff',
 				'#a1c1be',
 				'#59554e',
-			)
+			),
 		),
 	);
 
