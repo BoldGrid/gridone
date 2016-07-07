@@ -2,7 +2,6 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-
 	background: $palette-primary_3;
 	color: $text-contrast-palette-primary_3;
 
@@ -35,11 +34,11 @@
 		border: 1px solid $palette-primary_1;
 		color: $palette-primary_1;
 	}
-	h1, 
-	h2, 
-	h3, 
-	h4, 
-	h5, 
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
 	h6,
 	caption,
 	#menu-social li a {
@@ -47,7 +46,7 @@
 	}
 	.title-main {
 		border-bottom: 1px solid $palette-primary_1;
-	    border-top: 1px solid $palette-primary_1;
+		border-top: 1px solid $palette-primary_1;
 		color: $palette-primary_1;
 	}
 	hr {
@@ -66,12 +65,12 @@
 	.entry-title:before {
 		border-top: 1px solid $palette-primary_1;
 	}
-	.navbar-default .navbar-nav > .open > a, 
-	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
@@ -101,12 +100,12 @@
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus,
 	.palette-primary.disabled-footer .site-footer a {
-	  	color: $palette-primary_2;
+		color: $palette-primary_2;
 	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar
 	.navbar-default .navbar-toggle .icon-bar {
-	    background-color: $palette-primary_2;
+		background-color: $palette-primary_2;
 	}
 	.form-submit .submit {
 		background: $palette-primary_1;
@@ -120,14 +119,14 @@
 
 	/* xs */
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	    color: $text-contrast-palette-primary_2;
+		color: $text-contrast-palette-primary_2;
 	}
 
 	/* sm */
 	@media (min-width: 768px) {
 		/* Dropdown Child Default */
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	    	color: $text-contrast-palette-primary_2;
+			color: $text-contrast-palette-primary_2;
 		}
 	}
 
@@ -139,7 +138,7 @@
 		background-color: $palette-primary_3;
 	}
 	.mod-divider a {
-	    background: $palette-primary_3;
+		background: $palette-primary_3;
 	}
 	.site-title a,
 	#secondary-menu a,
@@ -151,29 +150,29 @@
 	}
 	/* Nav Toggle */
 	.navbar-default .navbar-toggle {
-	    border-color: $palette-primary_3;
+		border-color: $palette-primary_3;
 	}
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus {
 		background-color: $palette-primary_3;
 	}
 	.widget-area {
-	    border: 1px solid $text-contrast-palette-primary_3;
+		border: 1px solid $text-contrast-palette-primary_3;
 	}
 
 	/*-----------------------------------------------
-	# Et Cetera 
+	# Et Cetera
 	-----------------------------------------------*/
-	.woocommerce #respond input#submit, 
+	.woocommerce #respond input#submit,
 	.woocommerce a.button,
-	.woocommerce button.button, 
+	.woocommerce button.button,
 	.woocommerce input.button,
 	.woocommerce p.buttons a.button {
-	    background-color: #a46497;
-	    color: #fff;
+		background-color: #a46497;
+		color: #fff;
 	}
 	.woocommerce p.buttons a.button:hover {
 		background-color: #dad8da;
-	    color: #515151;
+		color: #515151;
 	}
 }
