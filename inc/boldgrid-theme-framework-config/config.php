@@ -78,35 +78,43 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		),
 	);
 
-	// Text Contrast Colors
+	// Text Contrast Colors.
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
 
-	// Typography Headings
+	// Typography Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Oswald';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 18;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 13;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
 
-	// Typography Alternate Headings
+	// Typography Alternate Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Oswald';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 18;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
 
-	// Typography Navigation
+	// Typography Navigation.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Open Sans';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
 
-	// Typography Body
+	// Typography Body.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 15;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 140;
 
-	// Additional Typography Selectors.
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-home .title-main' ] = array(
+	// Typography Tagline Classes.
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h4 alt-font';
+
+	// Typography Relationships.
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['h2.title-main'] = array(
 		'type' => 'headings',
-		'round' => 'ceil',
-		'amount' => 4.7,
+		'round' => 'floor',
+		'amount' => 6.1,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.entry-header h1.entry-title'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 1.6,
 	);
 
 	// Icons.
