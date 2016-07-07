@@ -53,10 +53,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 -----------------------------------------------*/
 body,
 .custom-background {
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /*-----------------------------------------------
@@ -70,14 +70,14 @@ p {
 	margin-bottom: 15px;
 }
 .mod-divider p {
-    margin-top: -30px;
+	margin-top: -30px;
 }
 
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
 body {
-  	font-weight: 400;
+	font-weight: 400;
 }
 h2 {
 	font-weight: 700;
@@ -86,11 +86,11 @@ h3 {
 	font-weight: 400;
 }
 .title-main {
-  	font-size: 60px; /* Specified font size */
-  	font-weight: 700;
+	font-size: 60px; /* Specified font size */
+	font-weight: 700;
 }
 .entry-title {
-    text-transform: none;
+	text-transform: none;
 	font-weight: 300;
 	text-align: center;
 }
@@ -119,11 +119,11 @@ input[type="submit"]:focus {
 #secondary-menu a,
 #tertiary-menu a,
 #menu-social a {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 #secondary-menu,
 #tertiary-menu {
-    text-align: center;
+	text-align: center;
 }
 .menu-social {
 	text-align: center;
@@ -135,13 +135,13 @@ input[type="submit"]:focus {
 	font-weight: 400;
 }
 .mod-divider p {
-    text-align: center;
+	text-align: center;
 }
 .mod-divider a {
 	font-size: 60px; /* Specified font size */
 }
 .mod-icon-circle i {
-    font-size: 35px; /* Specified font size */
+	font-size: 35px; /* Specified font size */
 }
 
 /* Blockquote */
@@ -151,7 +151,7 @@ input[type="submit"]:focus {
 }
 
 .woocommerce p.buttons a.button:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .site-footer p,
@@ -194,10 +194,10 @@ input[type="submit"]:focus {
 		text-align: left;
 	}
 	.menu-social {
-	    text-align: right;
+		text-align: right;
 	}
 	.title-main {
-  		font-size: 85px; /* Specified font size */
+		font-size: 85px; /* Specified font size */
 	}
 }
 
@@ -223,31 +223,30 @@ input[type="submit"]:focus {
 ## Titles
 -----------------------------------------------*/
 .title-main {
-  	margin: 0;
-    padding: 20px 0;
+	margin: 0;
+	padding: 20px 0;
 }
 .post-title-hidden .entry-meta {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 .entry-title {
 	display: block;
 	margin: 60px 0;
 	position: relative;
-    z-index: 1;
+	z-index: 1;
 }
 .entry-title:before {
 	bottom: 0;
-    content:"";
+	content:"";
 	left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
 	top: 50%;
-    z-index: -1;
+	z-index: -1;
 }
 .entry-title span {
-    /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    padding: 0 15px;
+	padding: 0 15px;
 }
 .page-template-page_home .entry-header {
 	display: none;
@@ -279,7 +278,7 @@ input[type="submit"] {
 .button-primary,
 .button-secondary {
 	display: block;
-    margin-top: 15px;
+	margin-top: 15px;
 }
 .call-to-action .p-button-primary {
 	margin-top: 0;
@@ -291,7 +290,7 @@ input[type="submit"] {
 	.button-secondary,
 	.call-to-action .p-button-primary {
 		display: inline;
-    	margin-top: 0;
+		margin-top: 0;
 	}
 	.gridblock .p-button-secondary {
 		margin: 25px 0;
@@ -325,7 +324,7 @@ hr {
 	/* Border Radius */
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-    border-radius: 0;
+	border-radius: 0;
 }
 .navbar-default {
 	background: none;
@@ -337,7 +336,7 @@ hr {
 
 /* Links */
 .navbar-default .navbar-nav > li > a {
-    padding: 10px;
+	padding: 10px;
 }
 .navbar-default .navbar-nav > li:first-child > a {
 	margin-left: 0;
@@ -366,7 +365,7 @@ hr {
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    background: none;
+	background: none;
 }
 
 /* sm */
@@ -386,13 +385,13 @@ hr {
 }
 #secondary-menu,
 #tertiary-menu {
-    background: none;
+	background: none;
 }
 .boldgrid-framework-menu li::after {
 	content: none;
 }
 .footer-center-items li::after, .boldgrid-framework-menu li::after {
-    content: "";
+	content: "";
 }
 
 /*-----------------------------------------------
@@ -413,22 +412,22 @@ hr {
 	padding-left: 0px;
 }
 #menu-social ul li {
-    position: relative;
-    display:  inline-block;
+	position: relative;
+	display:  inline-block;
 }
 #menu-social li a {
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 }
 .navbar-nav .menu-social {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 /* sm */
 @media (min-width: 768px) {
 	.menu-social {
 		margin-top: 15px;
-	    padding-right: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -510,8 +509,8 @@ hr {
 	margin: 4em 0;
 }
 .mod-icon-circle i {
-    border-radius: 50%;
-    padding: 15px;
+	border-radius: 50%;
+	padding: 15px;
 }
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
@@ -547,17 +546,17 @@ hr {
 ------------------------------------------------------------------------*/
 .widget-area {
 	margin-top: 25px;
-    padding: 25px;
-    list-style:none;
+	padding: 25px;
+	list-style:none;
 }
 
 /* Comments */
 .comment-form-comment label {
-    float: left;
-    padding-right: 15px;
+	float: left;
+	padding-right: 15px;
 }
 .panel-footer {
-    padding: 20px 15px;
+	padding: 20px 15px;
 }
 
 /* Call to Action */
@@ -581,8 +580,8 @@ hr {
 	margin: 0;
 }
 .woocommerce p.buttons a.button:hover {
-    background-image: none;
-    text-decoration: none;
+	background-image: none;
+	text-decoration: none;
 }
 
 /*------------------------------------------------------------------------
@@ -606,7 +605,7 @@ html, body, .site, .site-content {
 	height: 100%;
 }
 #boldgrid-sticky-wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
