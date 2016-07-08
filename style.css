@@ -4,11 +4,10 @@ Author: The BoldGrid Team
 Theme URI: http://www.boldgrid.com/grid-one
 Author URI: http://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
-Version: 1.18
+Version: 1.19
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-gridone
-Template: prime
 Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-40
 */
 
@@ -30,13 +29,9 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # GridBLocks
 	## Positioning
-	## Alternates
 # Modules
 	## Universal
 	## Global
-	## Alpha
-	## Beta
-	## Gamma
 # Pages
 # Posts
 # Plugins
@@ -51,13 +46,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
 /*-----------------------------------------------
 ## Positioning
@@ -76,109 +64,54 @@ p {
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
-body {
-	font-weight: 400;
-}
-h2 {
-	font-weight: 700;
-}
-h3 {
-	font-weight: 400;
-}
+h2,
 .title-main {
-	font-size: 60px; /* Specified font size */
-	font-weight: 700;
+	font-weight: bold;
 }
-.entry-title {
-	text-transform: none;
-	font-weight: 300;
-	text-align: center;
-}
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	text-transform: none;
+.site-footer a {
+	text-decoration: underline;
 }
 .button-primary:hover,
 .button-primary:active,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-	text-decoration: none;
-}
 .button-secondary:hover,
-.button-secondary:active {
+.button-secondary:active,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.woocommerce p.buttons a.button:hover,
+.woocommerce p.buttons a.button:focus,
+.site-footer a:hover,
+.site-footer a:focus {
 	text-decoration: none;
 }
-.site-title {
-	font-weight: normal;
-}
-#site-navigation {
-	font-weight: 400;
-	text-transform: uppercase;
-}
-#secondary-menu a,
-#tertiary-menu a,
-#menu-social a {
-	text-transform: uppercase;
-}
+.entry-title,
 #secondary-menu,
-#tertiary-menu {
-	text-align: center;
-}
-.menu-social {
-	text-align: center;
-}
-#menu-social li a {
-	text-align: right;
-}
-.gridblock .heading-alt {
-	font-weight: 400;
-}
-.mod-divider p {
-	text-align: center;
-}
-.mod-divider a {
-	font-size: 60px; /* Specified font size */
-}
-.mod-icon-circle i {
-	font-size: 35px; /* Specified font size */
-}
-
-/* Blockquote */
-.mod-blockquote p {
-	font-size: 24px; /* Specified font size */
-	line-height: 28px;
-}
-
-.woocommerce p.buttons a.button:hover {
-	text-decoration: none;
-}
-
+#tertiary-menu,
+.mod-divider p,
 .site-footer p,
 .site-info,
 .attribution {
 	text-align: center;
 }
-.site-footer a {
-	text-decoration: underline;
+#menu-social li a {
+	text-align: right;
 }
-.site-footer a:hover,
-.site-footer a:focus {
-	text-decoration: none;
+
+/* Icons */
+.mod-divider i {
+	font-size: 52px;
+	padding-top: 0;
+}
+.mod-icon-circle i {
+	font-size: 35px;
 }
 
 /* xs */
 .site-title,
-.site-description {
-	text-align: center;
-}
-.title-main {
-	text-align: center;
-}
+.site-description,
 .navbar-default .navbar-nav,
-.navbar-default .navbar-nav .open .dropdown-menu {
-	text-align: center;
-}
+.navbar-default .navbar-nav .open .dropdown-menu,
+.menu-social,
+.title-main,
 .xs-center,
 .mod-img,
 .mod-img-circle,
@@ -196,13 +129,12 @@ input[type="submit"]:focus {
 	.menu-social {
 		text-align: right;
 	}
-	.title-main {
-		font-size: 85px; /* Specified font size */
-	}
 }
 
 /* md */
 @media (min-width: 992px) {
+	.site-title,
+	.site-description,
 	.xs-center,
 	.mod-img,
 	.mod-img-circle,
@@ -213,15 +145,14 @@ input[type="submit"]:focus {
 	.title-main {
 		text-align: right;
 	}
-	.site-title,
-	.site-description  {
-		text-align: left;
-	}
 }
 
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
+.page-template-page_home .entry-title {
+	display: none;
+}
 .title-main {
 	margin: 0;
 	padding: 20px 0;
@@ -235,7 +166,7 @@ input[type="submit"]:focus {
 	position: relative;
 	z-index: 1;
 }
-.entry-title:before {
+.entry-title::before {
 	bottom: 0;
 	content:"";
 	left: 0;
@@ -248,13 +179,14 @@ input[type="submit"]:focus {
 .entry-title span {
 	padding: 0 15px;
 }
-.page-template-page_home .entry-header {
-	display: none;
-}
 
 /*-----------------------------------------------
 ## Links
 -----------------------------------------------*/
+/* Removes blue box in Chrome */
+*:focus {
+	outline: 0;
+}
 
 /*-----------------------------------------------
 ## Buttons
@@ -316,7 +248,6 @@ hr {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Nav Reset */
 .navbar {
 	background-color: none;
 	border: none;
@@ -390,7 +321,8 @@ hr {
 .boldgrid-framework-menu li::after {
 	content: none;
 }
-.footer-center-items li::after, .boldgrid-framework-menu li::after {
+.footer-center-items li::after,
+.boldgrid-framework-menu li::after {
 	content: "";
 }
 
@@ -451,10 +383,6 @@ hr {
 	margin: 10px 0;
 }
 
-/*-----------------------------------------------
-## Alternates
------------------------------------------------*/
-
 /*------------------------------------------------------------------------
 # Modules
 ------------------------------------------------------------------------*/
@@ -504,7 +432,6 @@ hr {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-/* Divider */
 .mod-divider {
 	margin: 4em 0;
 }
@@ -515,27 +442,15 @@ hr {
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
 }
-
-/* Blockquote */
+blockquote,
 .mod-blockquote {
 	padding-bottom: 0;
 	padding-top: 0;
 }
+blockquote p,
 .mod-blockquote p {
 	padding-left: 15px;
 }
-
-/*-----------------------------------------------
-## Alpha
------------------------------------------------*/
-
-/*-----------------------------------------------
-## Beta
------------------------------------------------*/
-
-/*-----------------------------------------------
-## Gamma
------------------------------------------------*/
 
 /*------------------------------------------------------------------------
 # Pages
@@ -600,7 +515,7 @@ hr {
 	padding-bottom: 30px;
 }
 
-/** Sticky Footer **/
+/* Sticky Footer */
 html, body, .site, .site-content {
 	height: 100%;
 }
