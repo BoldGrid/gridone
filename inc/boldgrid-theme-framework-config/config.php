@@ -120,15 +120,15 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Icons.
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
-	// Menu Locations
-	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Header";
-	$boldgrid_framework_configs['menu']['locations']['tertiary'] = "Below Header";
-	$boldgrid_framework_configs['menu']['locations']['social'] = "Upper Right";
+	// Menu Locations.
+	$boldgrid_framework_configs['menu']['locations']['secondary'] = 'Above Header';
+	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Below Header';
+	$boldgrid_framework_configs['menu']['locations']['social'] = 'Upper Right';
 
-	// Background
+	// Background.
 	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
 
-	// Name Widget Areas
+	// Name Widget Areas.
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Below Site Title';
 
