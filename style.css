@@ -63,6 +63,7 @@ h2,
 .site-footer a {
 	text-decoration: underline;
 }
+.entry-title a:hover,
 .button-primary:hover,
 .button-primary:active,
 .button-secondary:hover,
@@ -166,7 +167,7 @@ input[type="submit"]:focus,
 	top: 50%;
 	z-index: -1;
 }
-.entry-title span {
+.entry-title a {
 	padding: 0 15px;
 }
 
