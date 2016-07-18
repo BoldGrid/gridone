@@ -82,6 +82,15 @@
 	#menu-social a {
 		color: $text-contrast-palette-primary_1;
 	}
+	#secondary-menu,
+	#tertiary-menu {
+		.current-menu-item a {
+			color: $palette-primary_2;
+		}
+	}
+	#footer-center-menu .current-menu-item a {
+		color: $palette-primary_1;
+	}
 
 	/*-----------------------------------------------
 	## 2
