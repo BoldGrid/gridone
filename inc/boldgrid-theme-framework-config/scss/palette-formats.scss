@@ -146,8 +146,10 @@
 	.entry-title a {
 		background-color: $palette-primary_3;
 	}
-	.mod-divider a {
-		background: $palette-primary_3;
+	.mod-divider {
+		i, a {
+			background: $palette-primary_3;
+		}
 	}
 	.site-title a,
 	#secondary-menu a,
