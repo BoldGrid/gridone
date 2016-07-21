@@ -69,9 +69,7 @@
 	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
 		background: $palette-primary_2;
@@ -128,6 +126,16 @@
 
 	/* xs */
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: $text-contrast-palette-primary_3;
+	}
+	.navbar-default .navbar-nav .dropdown-menu {
+		background: $palette-primary_3;
+	}
+
+	.navbar-default .navbar-nav > .dropdown.active.open > a,
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover {
 		color: $text-contrast-palette-primary_2;
 	}
 
@@ -135,7 +143,7 @@
 	@media (min-width: 768px) {
 		/* Dropdown Child Default */
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-			color: $text-contrast-palette-primary_2;
+			color: $text-contrast-palette-primary_3;
 		}
 	}
 
@@ -155,8 +163,10 @@
 	#secondary-menu a,
 	#tertiary-menu a,
 	#menu-social a,
-	.navbar-default .navbar-nav > li > a,
 	.comments-area .comment-content p {
+		color: $text-contrast-palette-primary_3;
+	}
+	.navbar-default .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_3;
 	}
 	/* Nav Toggle */
