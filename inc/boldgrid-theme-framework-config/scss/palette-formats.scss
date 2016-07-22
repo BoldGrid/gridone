@@ -133,9 +133,9 @@
 	}
 
 	.navbar-default .navbar-nav > .dropdown.active.open > a,
-	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus,
-	.navbar-default .navbar-nav > .active > a:hover {
+	.navbar-default .navbar-nav > li.dropdown.active.open > a:hover,
+	.navbar-default .navbar-nav > li.dropdown.active.open > a:focus,
+	.navbar-default .navbar-nav > .dropdown.active.open > a:hover {
 		color: $text-contrast-palette-primary_2;
 	}
 
