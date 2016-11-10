@@ -41,7 +41,10 @@
 	h5,
 	h6,
 	caption,
-	#menu-social li a {
+	#menu-social li a,
+	.widget .nav > li > a:hover,
+	.widget .nav > li > a:focus,
+	#footer-center-menu .current-menu-item a {
 		color: $palette-primary_1;
 	}
 	.title-main {
@@ -65,29 +68,10 @@
 	.entry-title:before {
 		border-top: 1px solid $palette-primary_1;
 	}
-	.navbar-default .navbar-nav > .open > a,
-	.navbar-default .navbar-nav > .open > a:hover,
-	.navbar-default .navbar-nav > .open > a:focus,
-	.navbar-default .navbar-nav > .current-menu-parent > a,
-
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
-		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
-	}
 	#secondary-menu a,
 	#tertiary-menu a,
 	#menu-social a {
 		color: $text-contrast-palette-primary_1;
-	}
-	#secondary-menu,
-	#tertiary-menu {
-		.current-menu-item a {
-			color: $palette-primary_2;
-		}
-	}
-	#footer-center-menu .current-menu-item a {
-		color: $palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -106,21 +90,34 @@
 	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus,
-	.palette-primary.disabled-footer .site-footer a {
+	.palette-primary.disabled-footer .site-footer a,
+	.widget.well a {
 		color: $palette-primary_2;
 	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav > .current-menu-parent > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.form-submit .submit:hover,
+	.form-submit .submit:focus {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	#secondary-menu,
+	#tertiary-menu {
+		.current-menu-item a {
+			color: $palette-primary_2;
+		}
+	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
-	.navbar-default .navbar-toggle:focus .icon-bar
+	.navbar-default .navbar-toggle:focus .icon-bar,
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: $palette-primary_2;
 	}
 	.form-submit .submit {
 		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_2;
-	}
-	.form-submit .submit:hover,
-	.form-submit .submit:focus {
-		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
 
@@ -163,12 +160,12 @@
 	#secondary-menu a,
 	#tertiary-menu a,
 	#menu-social a,
-	.comments-area .comment-content p {
+	.comments-area .comment-content p,
+	.navbar-default .dropdown-menu > li > a,
+	.widget.well {
 		color: $text-contrast-palette-primary_3;
 	}
-	.navbar-default .dropdown-menu > li > a {
-		color: $text-contrast-palette-primary_3;
-	}
+
 	/* Nav Toggle */
 	.navbar-default .navbar-toggle {
 		border-color: $palette-primary_3;

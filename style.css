@@ -219,6 +219,15 @@ hr {
 	border: 0;
 	height: 1px;
 }
+.well {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+.widget .nav > li > a:hover,
+.widget .nav > li > a:focus {
+	background: transparent;
+}
 
 /*------------------------------------------------------------------------
 # Header
