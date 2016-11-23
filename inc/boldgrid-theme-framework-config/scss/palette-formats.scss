@@ -10,7 +10,8 @@
 	-----------------------------------------------*/
 	.button-primary,
 	input[type="submit"],
-	.widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
+	.widget .table-striped > tbody > tr:nth-child(2n+1) > td,
+	.pager li > a {
 		background: $palette-primary_1;
 		border: 1px solid $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
@@ -23,7 +24,9 @@
 	.button-primary:hover,
 	.button-primary:active,
 	input[type="submit"]:hover,
-	input[type="submit"]:focus  {
+	input[type="submit"]:focus,
+	.pager li > a:hover,
+	.pager li > a:focus {
 		background: $palette-primary_2;
 		border: 1px solid $palette-primary_2;
 		color: $text-contrast-palette-primary_1;
@@ -55,7 +58,8 @@
 	hr {
 		background: $palette-primary_1;
 	}
-	.mod-blockquote {
+	.mod-blockquote,
+	blockquote {
 		border-left: 7px solid $palette-primary_1;
 	}
 	.mod-icon-circle i {
