@@ -181,6 +181,12 @@
 	.widget-area {
 		border: 1px solid $text-contrast-palette-primary_3;
 	}
+	.panel-default > .panel-heading,
+	.panel-body,
+	.panel-footer {
+		background: $palette-primary_3;
+		color: $text-contrast-palette-primary_3;
+	}
 
 	/*-----------------------------------------------
 	# Et Cetera

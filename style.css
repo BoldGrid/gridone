@@ -400,7 +400,15 @@ blockquote p,
 	padding-right: 15px;
 }
 .panel-footer {
+	border-top: 1px solid transparent;
 	padding: 20px 15px;
+}
+.panel-default > .panel-heading,
+.panel-default {
+	border: none;
+}
+.panel {
+	box-shadow: none;
 }
 
 /* Call to Action */
