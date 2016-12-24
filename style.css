@@ -340,8 +340,6 @@ hr {
 }
 #menu-social li a {
 	display: inline-block;
-
-	-webkit-font-smoothing: antialiased;
 }
 .navbar-nav .menu-social {
 	margin-top: 0;
