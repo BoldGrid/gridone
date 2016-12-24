@@ -42,8 +42,18 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
 	margin: 1em 0;
 }
 p {
@@ -82,8 +92,8 @@ input[type="submit"]:focus,
 
 /* Icons */
 .mod-divider i {
-	font-size: 52px;
 	padding: 0 .5em;
+	font-size: 52px;
 }
 .mod-icon-circle i {
 	font-size: 35px;
@@ -152,20 +162,20 @@ input[type="submit"]:focus,
 	margin-top: 50px;
 }
 .entry-title {
-	display: block;
-	margin: 60px 0;
 	position: relative;
 	z-index: 1;
+	display: block;
+	margin: 60px 0;
 }
 .entry-title::before {
-	bottom: 0;
-	content:"";
-	left: 0;
-	margin: 0 auto;
 	position: absolute;
-	right: 0;
 	top: 50%;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	z-index: -1;
+	margin: 0 auto;
+	content: "";
 }
 .entry-title a {
 	padding: 0 15px;
@@ -177,9 +187,9 @@ input[type="submit"]:focus,
 .button-primary,
 .button-secondary,
 input[type="submit"] {
-	border-radius: 2px;
 	display: inline-block;
 	padding: 8px 15px;
+	border-radius: 2px;
 }
 
 /* Positioning */
@@ -216,12 +226,12 @@ input[type="submit"] {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	border: 0;
 	height: 1px;
+	border: 0;
 }
 .well {
-	background: transparent;
 	border: none;
+	background: transparent;
 	box-shadow: none;
 }
 .widget .nav > li > a:hover,
@@ -241,14 +251,14 @@ hr {
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	background-color: none;
-	border: none;
 	min-height: 0;
+	border: none;
 	border-radius: 0;
+	background-color: none;
 }
 .navbar-default {
-	background: none;
 	margin-bottom: 0;
+	background: none;
 }
 .navbar-default .navbar-nav {
 	margin-left: -15px;
@@ -318,18 +328,19 @@ hr {
 }
 .menu-social li {
 	display: inline;
-	list-style: none;
 	padding-right: 10px;
+	list-style: none;
 }
 #menu-social ul {
-	padding-left: 0px;
+	padding-left: 0;
 }
 #menu-social ul li {
 	position: relative;
-	display:  inline-block;
+	display: inline-block;
 }
 #menu-social li a {
 	display: inline-block;
+
 	-webkit-font-smoothing: antialiased;
 }
 .navbar-nav .menu-social {
@@ -355,16 +366,16 @@ hr {
 	margin: 4em 0;
 }
 .mod-icon-circle i {
-	border-radius: 50%;
 	padding: 15px;
+	border-radius: 50%;
 }
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
 }
 blockquote,
 .mod-blockquote {
-	padding-bottom: 0;
 	padding-top: 0;
+	padding-bottom: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -376,8 +387,8 @@ blockquote p,
 ------------------------------------------------------------------------*/
 /* 404 Page */
 .error404 .list-group-item {
-	background: transparent;
 	border: none;
+	background: transparent;
 }
 /* Search Page */
 .search .jumbotron {
@@ -389,7 +400,7 @@ blockquote p,
 .widget-area {
 	margin-top: 25px;
 	padding: 25px;
-	list-style:none;
+	list-style: none;
 }
 
 /* Comments */
@@ -398,8 +409,8 @@ blockquote p,
 	padding-right: 15px;
 }
 .panel-footer {
-	border-top: 1px solid transparent;
 	padding: 20px 15px;
+	border-top: 1px solid transparent;
 }
 .panel-default > .panel-heading,
 .panel-default {
