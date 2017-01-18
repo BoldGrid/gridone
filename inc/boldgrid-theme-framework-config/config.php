@@ -16,7 +16,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Specify the parent theme's name.
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
 	// Select the footer template to use.
-	$boldgrid_framework_configs['template']['footer'] = '1';
+	$boldgrid_framework_configs['template']['footer'] = 'generic';
 	// Select the header template to use.
 	$boldgrid_framework_configs['template']['header'] = 'generic';
 	// Assign menus, widgets, and actions to locations in generic header template.
@@ -28,6 +28,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'8' => array( '[widget]boldgrid-widget-2' ),
 		'11' => array( '[action]boldgrid_primary_navigation' ),
 		'13' => array( '[menu]tertiary' ),
+	);
+
+	// Assign Locations for Generic Footer.
+	$boldgrid_framework_configs['template']['locations']['footer'] = array(
+		'1' => array( '[menu]tertiary' ),
+		'5' => array( '[widget]boldgrid-widget-3', '[menu]footer_center' ),
+		'8' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
 	/**
