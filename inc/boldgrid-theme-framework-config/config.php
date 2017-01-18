@@ -15,6 +15,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
 	// Specify the parent theme's name.
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
+	// Disable call to action widgets for this theme.
+	$boldgrid_framework_configs['template']['call-to-action'] = 'disabled';
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 	// Select the header template to use.
@@ -32,8 +34,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign Locations for Generic Footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
-		'1' => array( '[menu]tertiary' ),
-		'5' => array( '[widget]boldgrid-widget-3', '[menu]footer_center' ),
+		'1' => array( '[menu]footer_center' ),
+		'5' => array( '[widget]boldgrid-widget-3' ),
 		'8' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
