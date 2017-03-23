@@ -92,8 +92,8 @@ input[type="submit"]:focus,
 
 /* Icons */
 .mod-divider i {
-	padding: 0 .5em;
 	font-size: 52px;
+	padding: 0 .5em;
 }
 .mod-icon-circle i {
 	font-size: 35px;
@@ -162,20 +162,20 @@ input[type="submit"]:focus,
 	margin-top: 50px;
 }
 .entry-title {
+	display: block;
+	margin: 60px 0;	
 	position: relative;
 	z-index: 1;
-	display: block;
-	margin: 60px 0;
 }
 .entry-title::before {
-	position: absolute;
-	top: 50%;
-	right: 0;
+	content: "";	
 	bottom: 0;
 	left: 0;
-	z-index: -1;
 	margin: 0 auto;
-	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: -1;
 }
 .entry-title a {
 	padding: 0 15px;
@@ -187,9 +187,9 @@ input[type="submit"]:focus,
 .button-primary,
 .button-secondary,
 input[type="submit"] {
+	border-radius: 2px;
 	display: inline-block;
 	padding: 8px 15px;
-	border-radius: 2px;
 }
 
 /* Positioning */
@@ -226,12 +226,12 @@ input[type="submit"] {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	height: 1px;
 	border: 0;
+	height: 1px;
 }
 .well {
-	border: none;
 	background: transparent;
+	border: none;
 	box-shadow: none;
 }
 .widget .nav > li > a:hover,
@@ -251,14 +251,14 @@ hr {
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	min-height: 0;
+	background-color: none;
 	border: none;
 	border-radius: 0;
-	background-color: none;
+	min-height: 0;
 }
 .navbar-default {
-	margin-bottom: 0;
 	background: none;
+	margin-bottom: 0;
 }
 .navbar-default .navbar-nav {
 	margin-left: -15px;
@@ -328,15 +328,15 @@ hr {
 }
 .menu-social li {
 	display: inline;
-	padding-right: 10px;
 	list-style: none;
+	padding-right: 10px;
 }
 #menu-social ul {
 	padding-left: 0;
 }
 #menu-social ul li {
-	position: relative;
 	display: inline-block;
+	position: relative;	
 }
 #menu-social li a {
 	display: inline-block;
@@ -364,16 +364,16 @@ hr {
 	margin: 4em 0;
 }
 .mod-icon-circle i {
-	padding: 15px;
 	border-radius: 50%;
+	padding: 15px;
 }
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
 }
 blockquote,
 .mod-blockquote {
+	padding-bottom: 0;	
 	padding-top: 0;
-	padding-bottom: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -385,20 +385,21 @@ blockquote p,
 ------------------------------------------------------------------------*/
 /* 404 Page */
 .error404 .list-group-item {
-	border: none;
 	background: transparent;
+	border: none;
 }
 /* Search Page */
 .search .jumbotron {
 	background: none;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
 .widget-area {
+	list-style: none;
 	margin-top: 25px;
 	padding: 25px;
-	list-style: none;
 }
 
 /* Comments */
@@ -407,8 +408,8 @@ blockquote p,
 	padding-right: 15px;
 }
 .panel-footer {
+	border-top: 1px solid transparent;	
 	padding: 20px 15px;
-	border-top: 1px solid transparent;
 }
 .panel-default > .panel-heading,
 .panel-default {
@@ -437,10 +438,6 @@ blockquote p,
 -----------------------------------------------*/
 .woocommerce .page-title {
 	margin: 0;
-}
-.woocommerce p.buttons a.button:hover {
-	background-image: none;
-	text-decoration: none;
 }
 
 /*------------------------------------------------------------------------
