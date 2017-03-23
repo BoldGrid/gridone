@@ -407,6 +407,9 @@ blockquote p,
 	float: left;
 	padding-right: 15px;
 }
+.panel {
+	background: transparent;
+}
 .panel-footer {
 	border-top: 1px solid transparent;	
 	padding: 20px 15px;
@@ -436,8 +439,11 @@ blockquote p,
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce .page-title {
-	margin: 0;
+.woocommerce #reviews #comments ol.commentlist li .comment-text,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+	border: none;
 }
 
 /*------------------------------------------------------------------------

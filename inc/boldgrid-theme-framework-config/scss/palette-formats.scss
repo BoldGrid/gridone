@@ -191,5 +191,7 @@
 	/*-----------------------------------------------
 	# WooCommerce
 	-----------------------------------------------*/
-
+	#reviews #comments ol.commentlist li .meta {
+		color: $text-contrast-palette-primary_3;
+	}
 }
