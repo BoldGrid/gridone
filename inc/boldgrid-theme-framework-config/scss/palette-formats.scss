@@ -105,7 +105,9 @@
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 	.form-submit .submit:hover,
-	.form-submit .submit:focus {
+	.form-submit .submit:focus,
+	.mark,
+	mark {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
