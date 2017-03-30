@@ -80,8 +80,6 @@ h2,
 .button-secondary:active,
 input[type="submit"]:hover,
 input[type="submit"]:focus,
-.woocommerce p.buttons a.button:hover,
-.woocommerce p.buttons a.button:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
@@ -323,16 +321,14 @@ hr {
 .menu-social {
 	padding: 0;
 }
-.menu-social ul {
+.menu-social ul,
+#menu-social ul {
 	padding-left: 0;
 }
 .menu-social li {
 	display: inline;
 	list-style: none;
 	padding-right: 10px;
-}
-#menu-social ul {
-	padding-left: 0;
 }
 #menu-social ul li {
 	display: inline-block;
@@ -388,6 +384,7 @@ blockquote p,
 	background: transparent;
 	border: none;
 }
+
 /* Search Page */
 .search .jumbotron {
 	background: none;
