@@ -436,11 +436,12 @@ blockquote p,
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce #reviews #comments ol.commentlist li .comment-text,
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
 	border: none;
+}
+
+.woocommerce-account p.order-again .btn.button-primary {
+	padding: 10px 20px;
 }
 
 /*------------------------------------------------------------------------
