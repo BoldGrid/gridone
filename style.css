@@ -236,6 +236,10 @@ hr {
 .widget .nav > li > a:focus {
 	background: transparent;
 }
+input,
+select {
+	color: #333;
+}
 
 /*------------------------------------------------------------------------
 # Header
