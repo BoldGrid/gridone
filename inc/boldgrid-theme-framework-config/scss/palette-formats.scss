@@ -196,4 +196,10 @@
 	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary_3;
 	}
+	&.woocommerce div.product .stock.out-of-stock {
+		color: $palette-primary_2;
+	}
+	&.woocommerce div.product .stock {
+		color: $text-contrast-palette-primary_3;
+	}
 }
