@@ -241,6 +241,7 @@ select {
 	color: #333;
 }
 
+
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
@@ -290,6 +291,14 @@ select {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
 	background: none;
+}
+
+/* Open */
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+	border: none; 
 }
 
 /* sm */
