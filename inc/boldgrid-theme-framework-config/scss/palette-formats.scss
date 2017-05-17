@@ -1,4 +1,9 @@
 /*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+$rgba_2 : rgba($palette-primary_2, 0.75);
+
+/*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
@@ -98,6 +103,8 @@
 	.widget.well a {
 		color: $palette-primary_2;
 	}
+	.wc-gallery-captions-show .gallery-caption,
+	.wc-gallery-captions-onpopup .gallery-caption, 
 	.navbar-default .navbar-nav > .open > a,
 	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
@@ -110,6 +117,28 @@
 	mark {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
+	}
+	.wc-gallery-captions-showon .gallery-caption, 
+	.wc-gallery-captions-onhover .gallery-caption {
+		background: $rgba_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	.wc-gallery .gallery-caption h2,
+	.wc-gallery .gallery-caption h3,
+	.wc-gallery .gallery-caption h4,
+	.wc-gallery .gallery-caption h5,
+	.wc-gallery .gallery-caption h6,
+	.wc-gallery .gallery-caption p {
+		color: $text-contrast-palette-primary_2;
+	}
+
+	/* Magnific Pop-up for gallery */
+	.mfp-title h2,
+	.mfp-title h3,
+	.mfp-title h4,
+	.mfp-title h5,
+	.mfp-title h6 {
+		color: #fff !important;
 	}
 	#secondary-menu,
 	#tertiary-menu {
