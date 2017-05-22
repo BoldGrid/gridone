@@ -100,7 +100,8 @@ $rgba_2 : rgba($palette-primary_2, 0.75);
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus,
 	.palette-primary.disabled-footer .site-footer a,
-	.widget.well a {
+	.widget.well a,
+	.navbar-default .navbar-nav > .current-menu-parent > a {
 		color: $palette-primary_2;
 	}
 	.wc-gallery-captions-show .gallery-caption,
@@ -108,7 +109,6 @@ $rgba_2 : rgba($palette-primary_2, 0.75);
 	.navbar-default .navbar-nav > .open > a,
 	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
-	.navbar-default .navbar-nav > .current-menu-parent > a,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 	.form-submit .submit:hover,
