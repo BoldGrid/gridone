@@ -452,9 +452,15 @@ blockquote p,
 .woocommerce #reviews #comments ol.commentlist li .comment-text {
 	border: none;
 }
-
 .woocommerce-account p.order-again .btn.button-primary {
 	padding: 10px 20px;
+}
+
+/*-----------------------------------------------
+## The Events Calendar
+-----------------------------------------------*/
+.palette-primary h4.entry-title::before {
+	border-top: none;
 }
 
 /*------------------------------------------------------------------------
