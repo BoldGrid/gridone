@@ -9,7 +9,6 @@
 	## 1
 	-----------------------------------------------*/
 	.button-primary,
-	input[type="submit"],
 	.widget .table-striped > tbody > tr:nth-child(2n+1) > td,
 	.pager li > a {
 		background: $palette-primary_1;
@@ -23,8 +22,6 @@
 	}
 	.button-primary:hover,
 	.button-primary:active,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
 	.pager li > a:hover,
 	.pager li > a:focus {
 		background: $palette-primary_2;
@@ -44,7 +41,6 @@
 	h5,
 	h6,
 	caption,
-	#menu-social li a,
 	.widget .nav > li > a:hover,
 	.widget .nav > li > a:focus,
 	#footer-center-menu .current-menu-item a {
@@ -72,23 +68,18 @@
 	.entry-title:before {
 		border-top: 1px solid $palette-primary_1;
 	}
-	#secondary-menu a,
-	#tertiary-menu a,
-	#menu-social a {
-		color: $text-contrast-palette-primary_1;
-	}
 
 	/*-----------------------------------------------
 	## 2
 	-----------------------------------------------*/
 	a,
-	.link-primary,
-	.link-secondary,
 	.heading-alt,
 	#menu-social li a:hover,
 	#menu-social li a:focus,
-	#secondary-menu a[href]:hover,
-	#tertiary-menu a[href]:hover,
+	#secondary-menu a:hover,
+	#secondary-menu a:focus,
+	#tertiary-menu a:hover,
+	#tertiary-menu a:focus,
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
 	.navbar-default .navbar-nav > .active > a,
@@ -104,8 +95,6 @@
 	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus,
 	.mark,
 	mark {
 		background: $palette-primary_2;
@@ -122,32 +111,17 @@
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: $palette-primary_2;
 	}
-	.form-submit .submit {
-		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_2;
-	}
-
-	/* xs */
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_3;
 	}
 	.navbar-default .navbar-nav .dropdown-menu {
 		background: $palette-primary_3;
 	}
-
 	.navbar-default .navbar-nav > .dropdown.active.open > a,
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:hover,
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:focus,
 	.navbar-default .navbar-nav > .dropdown.active.open > a:hover {
 		color: $text-contrast-palette-primary_2;
-	}
-
-	/* sm */
-	@media (min-width: 768px) {
-		/* Dropdown Child Default */
-		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-			color: $text-contrast-palette-primary_3;
-		}
 	}
 
 	/*-----------------------------------------------
@@ -180,9 +154,6 @@
 	.navbar-default .navbar-toggle:focus {
 		background-color: $palette-primary_3;
 	}
-	.widget-area {
-		border: 1px solid $text-contrast-palette-primary_3;
-	}
 	.panel-default > .panel-heading,
 	.panel-body,
 	.panel-footer {
@@ -194,12 +165,6 @@
 	# WooCommerce
 	-----------------------------------------------*/
 	#reviews #comments ol.commentlist li .meta {
-		color: $text-contrast-palette-primary_3;
-	}
-	&.woocommerce div.product .stock.out-of-stock {
-		color: $palette-primary_2;
-	}
-	&.woocommerce div.product .stock {
 		color: $text-contrast-palette-primary_3;
 	}
 }

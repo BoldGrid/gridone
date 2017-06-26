@@ -47,13 +47,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h6 {
 	margin: 1em 0;
 }
 p {
@@ -78,14 +72,9 @@ h2,
 .button-primary:active,
 .button-secondary:hover,
 .button-secondary:active,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
-}
-#menu-social li a {
-	text-align: right;
 }
 
 /* Icons */
@@ -104,7 +93,6 @@ input[type="submit"]:focus,
 .mod-divider p,
 .site-footer,
 .row.footer-1,
-.attribution,
 .site-title,
 .site-description,
 .navbar-default .navbar-nav,
@@ -183,10 +171,8 @@ input[type="submit"]:focus,
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.button-secondary,
-input[type="submit"] {
+.button-secondary {
 	border-radius: 2px;
-	display: inline-block;
 	padding: 8px 15px;
 }
 
@@ -203,15 +189,11 @@ input[type="submit"] {
 	display: block;
 	margin-top: 15px;
 }
-.call-to-action .p-button-primary {
-	margin-top: 0;
-}
 
 /* sm */
 @media (min-width: 500px) {
 	.button-primary,
-	.button-secondary,
-	.call-to-action .p-button-primary {
+	.button-secondary {
 		display: inline;
 		margin-top: 0;
 	}
@@ -241,7 +223,6 @@ select {
 	color: #333;
 }
 
-
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
@@ -254,9 +235,7 @@ select {
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	background-color: none;
 	border: none;
-	border-radius: 0;
 	min-height: 0;
 }
 .navbar-default {
@@ -284,6 +263,9 @@ select {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover,
 .navbar-default .navbar-nav > .current-menu-parent > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -291,14 +273,6 @@ select {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
 	background: none;
-}
-
-/* Open */
-.nav .open > a,
-.nav .open > a:focus,
-.nav .open > a:hover {
-	background: none;
-	border: none; 
 }
 
 /* sm */
@@ -316,10 +290,6 @@ select {
 #menu-social a {
 	padding: 0 5px;
 }
-#secondary-menu,
-#tertiary-menu {
-	background: none;
-}
 .footer-center-menu {
 	padding: 1.1em 0;
 }
@@ -331,24 +301,9 @@ select {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-.menu-social {
-	padding: 0;
-}
-.menu-social ul,
-#menu-social ul {
-	padding-left: 0;
-}
 .menu-social li {
 	display: inline;
-	list-style: none;
 	padding-right: 10px;
-}
-#menu-social ul li {
-	display: inline-block;
-	position: relative;	
-}
-#menu-social li a {
-	display: inline-block;
 }
 .navbar-nav .menu-social {
 	margin-top: 0;
@@ -358,7 +313,6 @@ select {
 @media (min-width: 768px) {
 	.menu-social {
 		margin-top: 15px;
-		padding-right: 15px;
 	}
 }
 
@@ -406,19 +360,10 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-area {
-	list-style: none;
-	margin-top: 25px;
-	padding: 25px;
-}
-
 /* Comments */
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
 .panel {
 	background: transparent;
+	box-shadow: none;
 }
 .panel-footer {
 	border-top: 1px solid transparent;	
@@ -427,19 +372,6 @@ blockquote p,
 .panel-default > .panel-heading,
 .panel-default {
 	border: none;
-}
-.panel {
-	box-shadow: none;
-}
-
-/* Call to Action */
-.single .call-to-action {
-	display: none;
-}
-
-/* Buttons */
-.form-submit .submit {
-	margin-bottom: 10px;
 }
 
 /*------------------------------------------------------------------------
@@ -466,9 +398,6 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
-.footer-center-items {
-	padding-left: 0;
-}
 .footer-center-items li a {
 	padding: 5px;
 }
