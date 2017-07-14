@@ -53,9 +53,6 @@ h6 {
 p {
 	margin-bottom: 15px;
 }
-.mod-divider p {
-	margin-top: -30px;
-}
 
 /*-----------------------------------------------
 ## Typography
@@ -86,7 +83,7 @@ h2,
 	font-size: 35px;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .entry-title,
 #secondary-menu,
 #tertiary-menu,
@@ -107,8 +104,8 @@ h2,
 	text-align: center;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default .navbar-nav,
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		text-align: left;
@@ -118,8 +115,8 @@ h2,
 	}
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.site-title,
 	.site-description,
 	.xs-center,
@@ -190,8 +187,8 @@ h2,
 	margin-top: 15px;
 }
 
-/* sm */
-@media (min-width: 500px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.button-primary,
 	.button-secondary {
 		display: inline;
@@ -275,8 +272,8 @@ select {
 	background: none;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default {
 		float: right;
 	}
@@ -309,8 +306,8 @@ select {
 	margin-top: 0;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.menu-social {
 		margin-top: 15px;
 	}
@@ -325,6 +322,9 @@ select {
 -----------------------------------------------*/
 .mod-divider {
 	margin: 4em 0;
+}
+.mod-divider p {
+	margin-top: -30px;
 }
 .mod-icon-circle i {
 	border-radius: 50%;
